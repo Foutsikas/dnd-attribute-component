@@ -1,0 +1,44 @@
+.attributeBox{
+    display:flex;
+    flex-direction:row;
+}
+
+.attribute {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 100px;
+    height: 4vh;
+    width: 15vw
+}
+
+.attribute input {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 15px;
+}
+
+.modifier {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 100px;
+    height: 4vh;
+    width: 25vw
+}
+
+.modifier input {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 15px;
+    }
