@@ -7,8 +7,8 @@
     display: flex;
     border: 2px solid black;
     border-radius: 100px;
-    height: 4vh;
-    width: 15vw
+    height: 6vh;
+    width: 4vw
 }
 
 .attribute input {
@@ -20,15 +20,16 @@
     padding: 0px;
     background-color: transparent;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .modifier {
     display: flex;
     border: 2px solid black;
     border-radius: 100px;
-    height: 4vh;
-    width: 25vw
+    height: 3vh;
+    width: 2vw;
+    margin-top: 15px;
 }
 
 .modifier input {
@@ -40,5 +41,5 @@
     padding: 0px;
     background-color: transparent;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     }
