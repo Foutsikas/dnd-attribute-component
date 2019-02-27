@@ -2,6 +2,8 @@
 (function ( $ ) {
     $( document ).ready(function() {
 
+        // https://learn.jquery.com/plugins/basic-plugin-creation/
+
         $("attribute").each((i, e) => {
             let el = $(e);
 
@@ -19,7 +21,9 @@
                         </span>\
                         ${name}
                 </div>`);
-        })
+        });
+
+        $("attribute[name=Strength]").value(20);
 
     });
 }( jQuery ));
