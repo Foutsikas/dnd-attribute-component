@@ -21,7 +21,7 @@
                 previousValue = parseInt(previousValue);
 
                 // upper limit check
-                if (previousValue >= 30)
+                if (previousValue >= 20)
                     return;
 
                 let newValue = (previousValue + 1);
@@ -60,15 +60,15 @@
                 //Sets the structure for the html.
                 el.html(
                     `<div>\
-                            <span class="attribute">\
-                                ${value}
-                            </span>\
-                            <span class="modifier" onclick="$(this).parent().parent().DiceRoll();">\
+                            <div class="attribute">\
+                                <div class="button" onclick="$(this).parent().parent().parent().decrementValue();"><span>-</span></div>
+                                <div class="value"><span>${value}</span></div>
+                                <div class="button" onclick="$(this).parent().parent().parent().incrementValue();"><span>+</span></div>
+                            </div>\
+                            <div class="modifier" onclick="$(this).parent().parent().DiceRoll();">\
                                 ${modifier}
-                            </span>\
+                            </div>\
                             ${name}
-                            <button type="button" onclick="$(this).parent().parent().incrementValue();">Increase</button>
-                            <button type="button" onclick="$(this).parent().parent().decrementValue();">Decrease</button>
                     </div>`);
             });
 

@@ -13,22 +13,57 @@ body{
     background-color: #d3d3d3;
 }
 
+attribute{
+    margin: 4px;
+}
+
 .attribute {
-    background-color: pink;
-    border: 2px solid black;
-	border-radius: 200px;
-	height: 4vh;
-    width: 30vw;
+    background-color: #a61108;
+    border: 3px solid #150301;
+    border-radius: 200px;
+    height: 1.2em;
+    width: 2.3em;
     font-size: 50px;
+    color: white;
+    display: inline-block;
+}
+
+.attribute div {
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+}
+
+.attribute .button{
+    font-size: 25px;
+    color:white;
+    cursor: pointer;
+    line-height: 1.2em;
+}
+
+.attribute .button span{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.attribute .value {
+    line-height: 1.2em;
+}
+
+.attribute .value span{
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .modifier {
     background-color: crimson;
-    border: 2px solid black;
-	border-radius: 200px;
-	height: 4vh;
-    width: 30vw;
-	margin-left: 1px;
-    text-align: right;
+    border: 3px solid #150301;
+    border-radius: 200px;
+    height: 1em;
+    width: 1em;
+    margin-left: 1px;
+    text-align: center;
     font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
 }
