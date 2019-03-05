@@ -15,6 +15,7 @@ body{
 
 attribute{
     margin: 4px;
+    display: inline;
 }
 
 .attribute {
@@ -28,6 +29,10 @@ attribute{
     display: inline-block;
 }
 
+.attribute-container{
+    text-align: center;
+}
+
 .attribute div {
     vertical-align: top;
     display: inline-block;
@@ -39,6 +44,7 @@ attribute{
     color:white;
     cursor: pointer;
     line-height: 1.2em;
+    width: 12%;
 }
 
 .attribute .button span{
