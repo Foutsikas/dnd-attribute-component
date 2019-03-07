@@ -50,6 +50,7 @@ attribute{
 .attribute .button span{
     vertical-align: middle;
     display: inline-block;
+    line-height: 2.4;
 }
 
 .attribute .value {
