@@ -45,7 +45,8 @@ attribute{
     color:white;
     cursor: pointer;
     width: 0.7em;
-    position: static;
+    float: right;
+    line-height: 2.4em;
 }
 
 .attribute .dec_button{
@@ -53,21 +54,8 @@ attribute{
     color:white;
     cursor: pointer;
     width: 0.7em;
-    position: static;
-}
-
-.attribute .inc_button span{
-    vertical-align: middle;
-    display: inline-block;
+    float: left;
     line-height: 2.4em;
-    position: static;
-}
-
-.attribute .dec_button span{
-    vertical-align: middle;
-    display: inline-block;
-    line-height: 2.4em;
-    position: static;
 }
 
 .attribute .value {
