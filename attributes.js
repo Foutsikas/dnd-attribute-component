@@ -59,16 +59,16 @@
 
                 //Sets the structure for the html.
                 el.html(
-                    `<div class="attribute-container">\
-                            <div class="attribute">\
-                                <div class="inc_button" onclick="$(this).parent().parent().parent().decrementValue();"><span>-</span></div>\
-                                <div class="value"><span>${value}</span></div>\
-                                <div class="dec_button" onclick="$(this).parent().parent().parent().incrementValue();"><span>+</span></div>\
-                            </div>\
-                            <div class="modifier" onclick="$(this).parent().parent().DiceRoll();">\
-                                <span>${modifier}</span>\
-                            </div>\
-                            <span>${name}</span>\
+                    `<div class="attribute-container">
+                            <div class="attribute">
+                                <div class="dec_button" onclick="$(this).parent().parent().parent().decrementValue();">-</div>
+                                <div class="value">${value}</div>
+                                <div class="inc_button" onclick="$(this).parent().parent().parent().incrementValue();">+</div>
+                            </div>
+                            <div class="modifier" onclick="$(this).parent().parent().DiceRoll();">
+                                ${modifier}
+                            </div>
+                            <div>${name}</div>
                     </div>`);
             });
 
