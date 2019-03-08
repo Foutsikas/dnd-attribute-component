@@ -25,7 +25,7 @@
                     return;
 
                 let newValue = (previousValue + 1);
-                this.attr("value", newValue);
+                this.attr("value",newValue);
                 this.change();
             }
 
@@ -39,7 +39,7 @@
                     return;
 
                 let newValue = (previousValue - 1);
-                this.attr("value", newValue);
+                this.attr("value",newValue);
                 this.change();
             }
 
@@ -61,9 +61,9 @@
                 el.html(
                     `<div class="attribute-container">\
                             <div class="attribute">\
-                                <div class="button" onclick="$(this).parent().parent().parent().decrementValue();"><span>-</span></div>\
+                                <div class="inc_button" onclick="$(this).parent().parent().parent().decrementValue();"><span>-</span></div>\
                                 <div class="value"><span>${value}</span></div>\
-                                <div class="button" onclick="$(this).parent().parent().parent().incrementValue();"><span>+</span></div>\
+                                <div class="dec_button" onclick="$(this).parent().parent().parent().incrementValue();"><span>+</span></div>\
                             </div>\
                             <div class="modifier" onclick="$(this).parent().parent().DiceRoll();">\
                                 <span>${modifier}</span>\
