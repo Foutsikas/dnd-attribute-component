@@ -18,6 +18,10 @@ attribute{
     display: inline;
 }
 
+.attribute-container{
+    text-align: center;
+}
+
 .attribute {
     background-color: #a61108;
     border: 3px solid #150301;
@@ -29,37 +33,52 @@ attribute{
     display: inline-block;
 }
 
-.attribute-container{
-    text-align: center;
-}
-
 .attribute div {
     vertical-align: top;
     display: inline-block;
     height: 100%;
 }
 
-.attribute .button{
+
+.attribute .inc_button{
     font-size: 25px;
     color:white;
     cursor: pointer;
-    line-height: 1.2em;
-    width: 12%;
+    width: 0.7em;
+    position: static;
 }
 
-.attribute .button span{
+.attribute .dec_button{
+    font-size: 25px;
+    color:white;
+    cursor: pointer;
+    width: 0.7em;
+    position: static;
+}
+
+.attribute .inc_button span{
     vertical-align: middle;
     display: inline-block;
-    line-height: 2.4;
+    line-height: 2.4em;
+    position: static;
+}
+
+.attribute .dec_button span{
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 2.4em;
+    position: static;
 }
 
 .attribute .value {
     line-height: 1.2em;
+    position: static;
 }
 
 .attribute .value span{
     vertical-align: middle;
     display: inline-block;
+    width: 100%;
 }
 
 .modifier {
