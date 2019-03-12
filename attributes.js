@@ -68,7 +68,7 @@
                             <div class="modifier" onclick="$(this).parent().parent().DiceRoll();">
                                 ${modifier}
                             </div>
-                            <div>${name}</div>
+                            <div><b>${name}</b></div>
                     </div>`);
             });
 
