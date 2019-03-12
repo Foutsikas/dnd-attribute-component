@@ -33,6 +33,14 @@ attribute{
     display: inline-block;
 }
 
+
+div b{
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 34px;
+    font-size: 25px;
+}
+
 .attribute div {
     vertical-align: top;
     display: inline-block;
