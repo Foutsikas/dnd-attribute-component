@@ -47,7 +47,10 @@
             $.fn.DiceRoll = function () {
                 let Dice = (Math.floor(Math.random() * 20 + 1));
                 let Mod = this.getModifier();
-                alert(`${Dice} + ${Mod} = ${Dice + Mod}`);
+                if (Mod < 0){
+                    alert(`${Dice} + (${Mod}) = ${Dice + Mod}`);
+                }else
+                    alert(`${Dice} + ${Mod} = ${Dice + Mod}`);
             }
 
 
