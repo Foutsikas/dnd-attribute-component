@@ -107,6 +107,6 @@ div b{
     font-size: 30px;
     display: inline-block;
     cursor: pointer;
-    line-height: 1.5em;
+    line-height: 1.5;
     background-image: url('background.jpg');
 }
