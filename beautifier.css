@@ -18,7 +18,7 @@ body{
     background-image: url('background.jpg');
 }
 
-attribute{
+attribute {
     margin: 4px;
     display: inline;
     /* font-family: 'Metamorphous', cursive; */
@@ -33,7 +33,6 @@ attribute{
 }
 
 .attribute {
-    background-color: #a61108;
     border: 3px solid #150301;
     border-radius: 200px;
     height: 1.2em;
@@ -44,13 +43,23 @@ attribute{
     background-image: url('background.jpg');
 }
 
+attribute.bright .attribute {
+    border-color: #F5F3F1;
+    color: white;
+}
 
-div b{
+
+.attribute-container div b{
+    color: rgb(0, 0, 0);
     text-align: center;
     vertical-align: middle;
     margin-right: 34px;
     font-size: 25px;
     font-family: 'Oldenburg', cursive;
+}
+
+attribute.bright .attribute-container div b{
+    color: white;
 }
 
 .attribute div {
@@ -67,10 +76,14 @@ div b{
     width: 0.7em;
     float: right;
     line-height: 2.4em;
-    
+
     -webkit-user-select: none; /* Chrome/Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+ */
+}
+
+attribute.bright .attribute .inc_button {
+    color: white;
 }
 
 .attribute .dec_button{
@@ -86,6 +99,10 @@ div b{
     -ms-user-select: none; /* IE10+ */
 }
 
+attribute.bright .attribute .dec_button {
+    color: white;
+}
+
 .attribute .value {
     line-height: 1.2em;
     position: static;
@@ -98,8 +115,8 @@ div b{
 }
 
 .modifier {
-    background-color: crimson;
     border: 3px solid #150301;
+    color: rgb(0, 0, 0);
     border-radius: 200px;
     height: 1.5em;
     width: 1.5em;
@@ -110,4 +127,9 @@ div b{
     cursor: pointer;
     line-height: 1.5;
     background-image: url('background.jpg');
+}
+
+attribute.bright .modifier{
+    border-color: white;
+    color: white;
 }
