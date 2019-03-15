@@ -7,15 +7,25 @@
 */
 
 /* https://material.io/design/color/the-color-system.html#color-theme-creation*/
-
+/* @import url('https://fonts.googleapis.com/css?family=Metamorphous'); */
+/* @import url('https://fonts.googleapis.com/css?family=Modern+Antiqua'); */
+/* @import url('https://fonts.googleapis.com/css?family=Lancelot'); */
+/* @import url('https://fonts.googleapis.com/css?family=Yeon+Sung'); */
+@import url('https://fonts.googleapis.com/css?family=Oldenburg');
 
 body{
     background-color: #d3d3d3;
+    background-image: url('background.jpg');
 }
 
 attribute{
     margin: 4px;
     display: inline;
+    /* font-family: 'Metamorphous', cursive; */
+    /* font-family: 'Modern Antiqua', cursive; */
+    /* font-family: 'Lancelot', cursive; */
+    /* font-family: 'Yeon+Sung', cursive; */
+    font-family: 'Oldenburg', cursive;
 }
 
 .attribute-container{
@@ -29,8 +39,9 @@ attribute{
     height: 1.2em;
     width: 2.3em;
     font-size: 50px;
-    color: white;
+    color: rgb(0, 0, 0);
     display: inline-block;
+    background-image: url('background.jpg');
 }
 
 
@@ -50,7 +61,7 @@ div b{
 
 .attribute .inc_button{
     font-size: 25px;
-    color:white;
+    color:rgb(0, 0, 0);
     cursor: pointer;
     width: 0.7em;
     float: right;
@@ -59,7 +70,7 @@ div b{
 
 .attribute .dec_button{
     font-size: 25px;
-    color:white;
+    color:rgb(0, 0, 0);
     cursor: pointer;
     width: 0.7em;
     float: left;
@@ -81,11 +92,13 @@ div b{
     background-color: crimson;
     border: 3px solid #150301;
     border-radius: 200px;
-    height: 1em;
-    width: 1em;
+    height: 1.5em;
+    width: 1.5em;
     margin-left: 1px;
     text-align: center;
     font-size: 30px;
     display: inline-block;
     cursor: pointer;
+    line-height: 1.5em;
+    background-image: url('background.jpg');
 }
