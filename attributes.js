@@ -45,20 +45,15 @@
             $.fn.DiceRoll = function () {
                 let Dice = (Math.floor(Math.random() * 20 + 1));
                 let Mod = this.getModifier();
-                if (Mod < 0){
-                    swal.fire({
-                        title: 'Rolling D20:',
-                        text: `${Dice} + (${Mod}) = ${Dice + Mod}`,
-                        type: 'info',
-                        confirmButtonColor: '#000',
-                        confirmButtonText: 'OK'})
-                }else
-                    swal.fire({
-                        title: 'Rolling D20:',
-                        text: `${Dice} + ${Mod} = ${Dice + Mod}`,
-                        type: 'info',
-                        confirmButtonColor: '#000',
-                        confirmButtonText: 'OK'})
+                swal.fire({
+                    title: 'Rolling D20:',
+                    text: (Mod < 0) ? `${Dice} + (${Mod}) = ${Dice + Mod}` : `${Dice} + ${Mod} = ${Dice + Mod}`,
+                    imageUrl: `alertimage.png`,
+                    imageWidth: 100,
+                    imageHeight: 100,
+                    confirmButtonColor: '#000',
+                    confirmButtonText: 'OK'
+                })
             }
 
 
