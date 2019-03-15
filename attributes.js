@@ -1,5 +1,4 @@
 
-
 (function ( $ ) {
     $( document ).ready(function() {
 
@@ -47,14 +46,14 @@
                 let Dice = (Math.floor(Math.random() * 20 + 1));
                 let Mod = this.getModifier();
                 if (Mod < 0){
-                    swal({
+                    swal.fire({
                         title: 'Rolling D20:',
                         text: `${Dice} + (${Mod}) = ${Dice + Mod}`,
                         type: 'info',
                         confirmButtonColor: '#000',
                         confirmButtonText: 'OK'})
                 }else
-                    swal({
+                    swal.fire({
                         title: 'Rolling D20:',
                         text: `${Dice} + ${Mod} = ${Dice + Mod}`,
                         type: 'info',
