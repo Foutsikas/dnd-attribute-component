@@ -8,7 +8,7 @@
 
 /* https://material.io/design/color/the-color-system.html#color-theme-creation*/
 /* @import url('https://fonts.googleapis.com/css?family=Metamorphous'); */
-/* @import url('https://fonts.googleapis.com/css?family=Modern+Antiqua'); */
+@import url('https://fonts.googleapis.com/css?family=Modern+Antiqua');
 /* @import url('https://fonts.googleapis.com/css?family=Lancelot'); */
 /* @import url('https://fonts.googleapis.com/css?family=Yeon+Sung'); */
 @import url('https://fonts.googleapis.com/css?family=Oldenburg');
@@ -22,10 +22,10 @@ attribute{
     margin: 4px;
     display: inline;
     /* font-family: 'Metamorphous', cursive; */
-    /* font-family: 'Modern Antiqua', cursive; */
+    font-family: 'Modern Antiqua', cursive;
     /* font-family: 'Lancelot', cursive; */
     /* font-family: 'Yeon+Sung', cursive; */
-    font-family: 'Oldenburg', cursive;
+    /* font-family: 'Oldenburg', cursive; */
 }
 
 .attribute-container{
@@ -50,6 +50,7 @@ div b{
     vertical-align: middle;
     margin-right: 34px;
     font-size: 25px;
+    font-family: 'Oldenburg', cursive;
 }
 
 .attribute div {
@@ -66,7 +67,7 @@ div b{
     width: 0.7em;
     float: right;
     line-height: 2.4em;
-
+    
     -webkit-user-select: none; /* Chrome/Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+ */
