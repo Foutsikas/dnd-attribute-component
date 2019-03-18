@@ -60,29 +60,29 @@
                 let Mod = this.getModifier();
                 let Name = el.attr("name");
 
-                if (Name === "Strength") {
-                    if (Mod === -5) {
-                        $('tooltiptext').append("Morbidly weak, has significant trouble lifting own limbs.");
-                    } else if (Mod === -4) {
-                        $('tooltiptext').append("Needs help to stand, can be knocked over by strong breezes.");
-                    } else if (Mod === -3) {
-                        $('tooltiptext').append("Visibly weak. Might be knocked off balance by swinging something dense.");
-                    } else if (Mod === -2) {
-                        $('tooltiptext').append("Difficulty pushing an object of their weight.");
-                    } else if (Mod === -1) {
-                        $('tooltiptext').append("Has trouble lifting heavy objects for a longer time.");
-                    } else if (Mod === 0) {
-                        $('tooltiptext').append("Lifts heavy objects for a short time. Can perform simple physical labor for a few hours without break.");
-                    } else if (Mod === 1) {
-                        $('tooltiptext').append("Carries heavy objects and throws small objects for medium distances. Can perform physical labor for half a day without break.");
-                    } else if (Mod === 2) {
-                        $('tooltiptext').append("Visibly toned. Carries heavy objects with one arm for longer distances. Doesn't get too exhausted by physical labor.");
-                    } else if (Mod === 3) {
-                        $('tooltiptext').append("Muscular. Can break objects like wood with bare hands and raw strength. Can perform heavy physical labor for several hours without break.");
-                    } else if (Mod === 4) {
-                        $('tooltiptext').append("Heavily muscular. Able to out-wrestle a work animal or catch a falling person. Performs the work of multiple people in physical labor.");
+                if (Name.is("Strength")) {
+                    if (Mod.is(-5)) {
+                        document.getElementsByClassName("tooltiptext").innerHTML = ("Morbidly weak, has significant trouble lifting own limbs.");
+                    } else if (Mod.is(-4)) {
+                        $("p").text("Needs help to stand, can be knocked over by strong breezes.");
+                    } else if (Mod.is(-3)) {
+                        $("p").text("Visibly weak. Might be knocked off balance by swinging something dense.");
+                    } else if (Mod.is(-2)) {
+                        $("p").text("Difficulty pushing an object of their weight.");
+                    } else if (Mod.is(-1)) {
+                        $("p").text("Has trouble lifting heavy objects for a longer time.");
+                    } else if (Mod.is(0)) {
+                        $("p").text("Lifts heavy objects for a short time. Can perform simple physical labor for a few hours without break.");
+                    } else if (Mod.is(1)) {
+                        $("p").text("Carries heavy objects and throws small objects for medium distances. Can perform physical labor for half a day without break.");
+                    } else if (Mod.is(2)) {
+                        $("p").text("Visibly toned. Carries heavy objects with one arm for longer distances. Doesn't get too exhausted by physical labor.");
+                    } else if (Mod.is(3)) {
+                        $("p").text("Muscular. Can break objects like wood with bare hands and raw strength. Can perform heavy physical labor for several hours without break.");
+                    } else if (Mod.is(4)) {
+                        $("p").text("Heavily muscular. Able to out-wrestle a work animal or catch a falling person. Performs the work of multiple people in physical labor.");
                     } else {
-                        $('tooltiptext').append("Pinnacle of brawn, able to out-lift several people in combined effort.");
+                        $("p").text("Pinnacle of brawn, able to out-lift several people in combined effort.");
                     }
                 }
             }
@@ -103,7 +103,7 @@
                                 <div class="inc_button" onclick="$(this).parent().parent().parent().incrementValue();">+</div>
                             </div>
                             <div class="modifier tooltip" onclick="$(this).parent().parent().DiceRoll();">
-                                <span class="tooltiptext" onmouseover="$(this).parent().parent().AttributeMessage()"></span>    
+                                <span class="tooltiptext" onmouseover="$(this).parent().parent().AttributeMessage()"><p></p></span>    
                                 ${modifier}
                             </div>
                             <div><b>${name}</b></div>
