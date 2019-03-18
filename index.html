@@ -5,25 +5,27 @@
         <meta charset="UTF-8">
         <title>D&D Attributes</title>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="attributes.js"></script>
+        <!-- SweetAlert2 -->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script src="sweetalert2.min.js"></script>
+        <!-- My Script and CSS -->
+        <script src="attributes.js"></script>
         <link rel="stylesheet" href="beautifier.css">
     </head>
     <body>
-        <div class="Dropdown">
-        <button class="dropbtn">Add Attribute</button>
-        <select name="attributes">
-            <option>
-                <attribute name="Strength" value="10">Strength</attribute>
-            </option>
-            <option>
-                <attribute name="Dexterity" value="10">Dexterity</attribute>
-            </option>
-            <option>
-                <attribute name="Constitution" value="10">Constitution</attribute>
-            </option>
-        </select>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Add Attribute
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#"><attribute name="Strength" value="10">Strength</attribute></a></li>
+                <li><a href="#"><attribute name="Dexterity" value="10">Dexterity</attribute></a></li>
+                <li><a href="#"><attribute name="Constitution" value="10">Constitution</attribute></a></li>
+            </ul>
         </div>
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

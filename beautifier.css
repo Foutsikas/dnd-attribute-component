@@ -13,7 +13,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Yeon+Sung'); */
 @import url('https://fonts.googleapis.com/css?family=Oldenburg');
 
-body{
+body {
     background-color: #d3d3d3;
     background-image: url('background.jpg');
 }
@@ -49,7 +49,7 @@ attribute.bright .attribute {
 }
 
 
-.attribute-container div b{
+.attribute-container div b {
     color: rgb(0, 0, 0);
     text-align: center;
     vertical-align: middle;
@@ -58,7 +58,7 @@ attribute.bright .attribute {
     font-family: 'Oldenburg', cursive;
 }
 
-attribute.bright .attribute-container div b{
+attribute.bright .attribute-container div b {
     color: white;
 }
 
@@ -69,7 +69,7 @@ attribute.bright .attribute-container div b{
 }
 
 
-.attribute .inc_button{
+.attribute .inc_button {
     font-size: 25px;
     color:rgb(0, 0, 0);
     cursor: pointer;
@@ -86,7 +86,7 @@ attribute.bright .attribute .inc_button {
     color: white;
 }
 
-.attribute .dec_button{
+.attribute .dec_button {
     font-size: 25px;
     color:rgb(0, 0, 0);
     cursor: pointer;
@@ -108,7 +108,7 @@ attribute.bright .attribute .dec_button {
     position: static;
 }
 
-.attribute .value span{
+.attribute .value span {
     vertical-align: middle;
     display: inline-block;
     width: 100%;
@@ -129,7 +129,8 @@ attribute.bright .attribute .dec_button {
     background-image: url('background.jpg');
 }
 
-attribute.bright .modifier{
+attribute.bright .modifier {
     border-color: white;
     color: white;
 }
+
