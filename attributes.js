@@ -4,7 +4,7 @@
 
         // https://learn.jquery.com/plugins/basic-plugin-creation/
 
-        $("attribute").each((i, e) => {
+        const InitializeAttribute = (i, e) => {
             let el = $(e);
             
             //Function that calculates the modifier value.
@@ -56,7 +56,6 @@
                 })
             }
 
-
             //Change function updates the page when something changes.
             el.change(() => {
                 let name = el.attr("name");
@@ -80,7 +79,19 @@
 
             //Updates the page after an action.
             el.change();
-        });
+        };
+
+
+        window.AddElement = function (title) {
+            let el = $(`
+                <attribute name="${title}" value="10">${title}</attribute>
+            `);
+            el.appendTo("#character-attributes");
+            InitializeAttribute(0, el);
+        }
+
+
+        $("attribute").each(InitializeAttribute);
     });
 
     
