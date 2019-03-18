@@ -62,27 +62,27 @@
 
                 if (Name === "Strength") {
                     if (Mod === -5) {
-                        console.log("Morbidly weak, has significant trouble lifting own limbs.");
+                        $(document.body).append("Morbidly weak, has significant trouble lifting own limbs.");
                     } else if (Mod === -4) {
-                        console.log("Needs help to stand, can be knocked over by strong breezes.");
+                        $(document.body).append("Needs help to stand, can be knocked over by strong breezes.");
                     } else if (Mod === -3) {
-                        console.log("Visibly weak. Might be knocked off balance by swinging something dense.");
+                        $(document.body).append("Visibly weak. Might be knocked off balance by swinging something dense.");
                     } else if (Mod === -2) {
-                        console.log("Difficulty pushing an object of their weight.");
+                        $(document.body).append("Difficulty pushing an object of their weight.");
                     } else if (Mod === -1) {
-                        console.log("Has trouble lifting heavy objects for a longer time.");
+                        $(document.body).append("Has trouble lifting heavy objects for a longer time.");
                     } else if (Mod === 0) {
-                        console.log("Lifts heavy objects for a short time. Can perform simple physical labor for a few hours without break.");
+                        $(document.body).append("Lifts heavy objects for a short time. Can perform simple physical labor for a few hours without break.");
                     } else if (Mod === 1) {
-                        console.log("Carries heavy objects and throws small objects for medium distances. Can perform physical labor for half a day without break.");
+                        $(document.body).append("Carries heavy objects and throws small objects for medium distances. Can perform physical labor for half a day without break.");
                     } else if (Mod === 2) {
-                        console.log("Visibly toned. Carries heavy objects with one arm for longer distances. Doesn't get too exhausted by physical labor.");
+                        $(document.body).append("Visibly toned. Carries heavy objects with one arm for longer distances. Doesn't get too exhausted by physical labor.");
                     } else if (Mod === 3) {
-                        console.log("Muscular. Can break objects like wood with bare hands and raw strength. Can perform heavy physical labor for several hours without break.");
+                        $(document.body).append("Muscular. Can break objects like wood with bare hands and raw strength. Can perform heavy physical labor for several hours without break.");
                     } else if (Mod === 4) {
-                        console.log("Heavily muscular. Able to out-wrestle a work animal or catch a falling person. Performs the work of multiple people in physical labor.");
+                        $(document.body).append("Heavily muscular. Able to out-wrestle a work animal or catch a falling person. Performs the work of multiple people in physical labor.");
                     } else {
-                        console.log("Pinnacle of brawn, able to out-lift several people in combined effort.");
+                        $(document.body).append("Pinnacle of brawn, able to out-lift several people in combined effort.");
                     }
                 }
             }

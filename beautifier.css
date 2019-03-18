@@ -142,8 +142,8 @@ attribute.bright .modifier{
   .tooltip .tooltiptext {
     visibility: hidden;
     border: 3px solid black;
-    width: 1.5em;
-    height: 1.5em;
+    width: 12em;
+    height: 3em;
     background-image: url('background.jpg');
     color: #fff;
     text-align: center;
