@@ -4,7 +4,7 @@
 
         // https://learn.jquery.com/plugins/basic-plugin-creation/
 
-        const InitializeAttribute = (i, e) => {
+        const InitializeAttribute = ((i, e) => {
             let el = $(e);
             
             //Function that calculates the modifier value.
@@ -38,7 +38,6 @@
 
                 let newValue = (previousValue - 1);
                 this.attr("value",newValue);
-                this.change();
             }
 
             //Jquery Function that calculates a random D20 roll and adds it with the modifier value. Throws an alert.
@@ -54,7 +53,9 @@
                     confirmButtonColor: '#000',
                     confirmButtonText: 'OK'
                 })
+                this,change();
             }
+
 
             //Change function updates the page when something changes.
             el.change(() => {
@@ -70,7 +71,7 @@
                                 <div class="value">${value}</div>
                                 <div class="inc_button" onclick="$(this).parent().parent().parent().incrementValue();">+</div>
                             </div>
-                            <div class="modifier" onclick="$(this).parent().parent().DiceRoll();">
+                            <div class="modifier" onclick="$(this).parent().parent().parent().DiceRoll();">
                                 ${modifier}
                             </div>
                             <div><b>${name}</b></div>
@@ -79,7 +80,7 @@
 
             //Updates the page after an action.
             el.change();
-        };
+        });
 
 
         window.AddElement = function (title) {
