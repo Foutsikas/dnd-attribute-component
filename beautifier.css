@@ -134,3 +134,56 @@ attribute.bright .modifier {
     color: white;
 }
 
+/* Bootstrap Extra CSS */
+.dropdown {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+}
+
+.dropdown-menu {
+    text-align: center;
+    background-color: #f9e0c3;
+}
+
+a:hover {
+    color: #07182c;
+    text-decoration: underline;
+}
+
+a {
+    color: #000;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 .2rem #f2c32380;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem #f2c32380;
+}
+
+.btn-primary:hover {
+
+    color: #fff;
+    background-color: #000;
+    border-color: #0b325c;
+
+}
+
+.btn-primary {
+
+    color: #fff;
+    background-color: #000;
+    border-color: #0b325c;
+
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #000;
+    border-color: #0b325c;
+}
