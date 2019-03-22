@@ -8,7 +8,7 @@ In Master Branch:
 
 In Dropdown_Test brach:
 - Add a dropdown list that adds more elements (ex. attributes) using Bootstrap ✓
-- Remove item from list if already added to the page.
+- Remove option from the list if it has already been selected.
 
 In Info_Text branch:
 - Add info pop-up when hovering over modifier.
