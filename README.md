@@ -1,4 +1,4 @@
-On Master Branch:
+In Master Branch:
 - Represents a character attribute (value + calculated modifier) ✓
 - Knows how to display itself ✓
 - Provides events to receive and events to emit (changing value recalculates modifier, can attach onChange event) ✓
@@ -7,7 +7,12 @@ On Master Branch:
 
 
 In Dropdown_Test brach:
-Tried to Add a dropdown list that adds more elements (ex. attributes) using Bootstrap.
-Got nowhere, will revisit.
+- Add a dropdown list that adds more elements (ex. attributes) using Bootstrap ✓
+- Remove item from list if already added to the page.
+
+In Info_Text branch:
+- Add info pop-up when hovering over modifier.
+
+
 
 Impliment this whole project back to the dnd-sheet project.
