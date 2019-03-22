@@ -13,6 +13,20 @@
                 return Math.floor((value - 10) / 2);
             }
             
+            //Jquery function that decreases the attribute value with the press of a button
+            $.fn.decrementValue = function () {
+                let previousValue = this.attr("value");
+                previousValue = parseInt(previousValue);
+
+                // lower limit check
+                if (previousValue <= 1)
+                    return;
+
+                let newValue = (previousValue - 1);
+                this.attr("value",newValue);
+                this.change();
+            }
+
             //Jquery function that increases the attribute value with the press of a button
             $.fn.incrementValue = function () {
                 let previousValue = this.attr("value");
@@ -25,19 +39,6 @@
                 let newValue = (previousValue + 1);
                 this.attr("value",newValue);
                 this.change();
-            }
-
-            //Jquery function that decreases the attribute value with the press of a button
-            $.fn.decrementValue = function () {
-                let previousValue = this.attr("value");
-                previousValue = parseInt(previousValue);
-
-                // lower limit check
-                if (previousValue <= 1)
-                    return;
-
-                let newValue = (previousValue - 1);
-                this.attr("value",newValue);
             }
 
             //Jquery Function that calculates a random D20 roll and adds it with the modifier value. Throws an alert.
@@ -53,9 +54,8 @@
                     confirmButtonColor: '#000',
                     confirmButtonText: 'OK'
                 })
-                this,change();
+                this.change();
             }
-
 
             //Change function updates the page when something changes.
             el.change(() => {
@@ -78,6 +78,7 @@
                     </div>`);
             });
 
+            
             //Updates the page after an action.
             el.change();
         });
