@@ -44,7 +44,7 @@
             //Jquery Function that calculates a random D20 roll and adds it with the modifier value. Throws an alert.
             $.fn.DiceRoll = function () {
                 let Dice = (Math.floor(Math.random() * 20 + 1));
-                let Mod = this.getModifier();
+                let Mod = this.children().getModifier();//This points to the ul #character-attribute so we need the child of that which is the HTML that will get generated in el.html
                 swal.fire({
                     title: 'Rolling D20:',
                     text: (Mod < 0) ? `${Dice} + (${Mod}) = ${Dice + Mod}` : `${Dice} + ${Mod} = ${Dice + Mod}`,
@@ -64,7 +64,7 @@
                 let modifier = el.getModifier();
 
                 //Sets the structure for the html.
-                el.html(
+                el.html(//We need the .parent() x3 in order to get into the correct scope.
                     `<div class="attribute-container">
                             <div class="attribute">
                                 <div class="dec_button" onclick="$(this).parent().parent().parent().decrementValue();">-</div>
