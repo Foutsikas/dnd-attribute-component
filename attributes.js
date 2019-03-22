@@ -89,9 +89,14 @@
                 <attribute name="${title}" value="10">${title}</attribute>
             `);
             el.appendTo("#character-attributes");
+            el.attr("disabled", "true");
             InitializeAttribute(0, el);
         }
 
+        // Function that removes the option from the list.
+        $("li").click(function () {
+            $(this).hide();
+        })
 
         $("attribute").each(InitializeAttribute);
     });
