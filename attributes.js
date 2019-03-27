@@ -56,14 +56,7 @@
                 })
             }
 
-            // $.fn.AttributeMessage = function () {
-            //     let Mod = this.parent().getModifier();
-            //     let Name = el.attr("name");
-
-            //     el.change();
-            // }
-
-
+            
             //Change function updates the page when something changes.
             el.change(() => {
                 let name = el.attr("name");
