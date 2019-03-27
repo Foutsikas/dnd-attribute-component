@@ -6,7 +6,7 @@ In Master Branch:
 - Clicking on the modifier box rolls that attribute (d20 + mod) and displays the result in an alert box ✓
 
 
-In Dropdown_Test brach:
+(Merged back to Master) In Dropdown_Test brach:
 - Add a dropdown list that adds more elements (ex. attributes) using Bootstrap ✓
 - Remove option from the list if it has already been selected. ✓
 
