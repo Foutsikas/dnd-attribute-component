@@ -56,37 +56,12 @@
                 })
             }
 
-            $.fn.AttributeMessage = function () {
-                let Mod = this.parent().getModifier();
-                let Name = el.attr("name");
+            // $.fn.AttributeMessage = function () {
+            //     let Mod = this.parent().getModifier();
+            //     let Name = el.attr("name");
 
-                if (Name === "Strength") {
-                    if (Mod === -5) {
-                        $('.tooltiptext p').text("Morbidly weak, has significant trouble lifting own limbs.");
-                    } else if (Mod === -4) {
-                        $("tooltiptext.p").text("Needs help to stand, can be knocked over by strong breezes.");
-                    } else if (Mod === -3) {
-                        $("tooltiptext.p").text("Visibly weak. Might be knocked off balance by swinging something dense.");
-                    } else if (Mod === -2) {
-                        $("tooltiptext.p").text("Difficulty pushing an object of their weight.");
-                    } else if (Mod === -1) {
-                        $("tooltiptext.p").text("Has trouble lifting heavy objects for a longer time.");
-                    } else if (Mod === 0) {
-                        $("tooltiptext.p").text("Lifts heavy objects for a short time. Can perform simple physical labor for a few hours without break.");
-                    } else if (Mod === 1) {
-                        $("tooltiptext.p").text("Carries heavy objects and throws small objects for medium distances. Can perform physical labor for half a day without break.");
-                    } else if (Mod === 2) {
-                        $("tooltiptext.p").text("Visibly toned. Carries heavy objects with one arm for longer distances. Doesn't get too exhausted by physical labor.");
-                    } else if (Mod === 3) {
-                        $("tooltiptext.p").html("Muscular. Can break objects like wood with bare hands and raw strength. Can perform heavy physical labor for several hours without break.");
-                    } else if (Mod === 4) {
-                        $("tooltiptext.p").text("Heavily muscular. Able to out-wrestle a work animal or catch a falling person. Performs the work of multiple people in physical labor.");
-                    } else {
-                        $("tooltiptext.p").text("Pinnacle of brawn, able to out-lift several people in combined effort.");
-                    }
-                }
-                el.change();
-            }
+            //     el.change();
+            // }
 
 
             //Change function updates the page when something changes.
@@ -94,6 +69,34 @@
                 let name = el.attr("name");
                 let value = parseInt(el.attr("value"));
                 let modifier = el.getModifier();
+
+                // Resolve tooltip message
+                let tooltipMessage = "";
+                if (name === "Strength") {
+                    if (modifier === -5) {
+                        tooltipMessage = "Morbidly weak, has significant trouble lifting own limbs.";
+                    } else if (modifier === -4) {
+                        tooltipMessage = "Needs help to stand, can be knocked over by strong breezes.";
+                    } else if (modifier === -3) {
+                        tooltipMessage = "Visibly weak. Might be knocked off balance by swinging something dense.";
+                    } else if (modifier === -2) {
+                        tooltipMessage = "Difficulty pushing an object of their weight.";
+                    } else if (modifier === -1) {
+                        tooltipMessage = "Has trouble lifting heavy objects for a longer time.";
+                    } else if (modifier === 0) {
+                        tooltipMessage = "Lifts heavy objects for a short time. Can perform simple physical labor for a few hours without break.";
+                    } else if (modifier === 1) {
+                        tooltipMessage = "Carries heavy objects and throws small objects for medium distances. Can perform physical labor for half a day without break.";
+                    } else if (modifier === 2) {
+                        tooltipMessage = "Visibly toned. Carries heavy objects with one arm for longer distances. Doesn't get too exhausted by physical labor.";
+                    } else if (modifier === 3) {
+                        tooltipMessage = "Muscular. Can break objects like wood with bare hands and raw strength. Can perform heavy physical labor for several hours without break.";
+                    } else if (modifier === 4) {
+                        tooltipMessage = "Heavily muscular. Able to out-wrestle a work animal or catch a falling person. Performs the work of multiple people in physical labor.";
+                    } else {
+                        tooltipMessage = "Pinnacle of brawn, able to out-lift several people in combined effort.";
+                    }
+                }
 
                 //Sets the structure for the html.
                 el.html(
@@ -104,7 +107,7 @@
                                 <div class="inc_button" onclick="$(this).parent().parent().parent().incrementValue();">+</div>
                             </div>
                             <div class="modifier tooltip tooltiptext" onclick="$(this).parent().parent().DiceRoll();">
-                                <span><p class="tooltiptext"></p></span>
+                                <p class="tooltiptext">${tooltipMessage}</p>
                                 ${modifier}
                             </div>
                             <div><b>${name}</b></div>
