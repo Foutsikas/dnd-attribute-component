@@ -192,6 +192,8 @@ a {
 .tooltip {
     position: relative;
     display: inline-block;
+    opacity: 2;
+    font-family: 'Modern Antiqua', cursive;
   }
   
   .tooltip .tooltiptext {
