@@ -190,10 +190,11 @@ a {
 }
 
 .tooltip {
-    position: inherit;
+    position: relative;
     display: inline-block;
     opacity: 2;
     font-family: 'Modern Antiqua', cursive;
+    z-index: 1;
   }
   
   .tooltip .tooltiptext {
