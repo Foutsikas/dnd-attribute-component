@@ -62,7 +62,7 @@
 
                 if (Name === "Strength") {
                     if (Mod === -5) {
-                        document.getElementsByClassName("tooltiptext").innerHTML = ("Morbidly weak, has significant trouble lifting own limbs.");
+                        $('.tooltiptext p').text("Morbidly weak, has significant trouble lifting own limbs.");
                     } else if (Mod === -4) {
                         $("tooltiptext.p").text("Needs help to stand, can be knocked over by strong breezes.");
                     } else if (Mod === -3) {
@@ -104,7 +104,7 @@
                                 <div class="inc_button" onclick="$(this).parent().parent().parent().incrementValue();">+</div>
                             </div>
                             <div class="modifier tooltip tooltiptext" onclick="$(this).parent().parent().DiceRoll();">
-                                <span class="tooltiptext" onmouseover="$(this).parent().parent().AttributeMessage()"><p></p></span>    
+                                <span><p class="tooltiptext"></p></span>
                                 ${modifier}
                             </div>
                             <div><b>${name}</b></div>
