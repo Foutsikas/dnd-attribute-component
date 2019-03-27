@@ -78,7 +78,7 @@
                     } else if (Mod === 2) {
                         $("tooltiptext.p").text("Visibly toned. Carries heavy objects with one arm for longer distances. Doesn't get too exhausted by physical labor.");
                     } else if (Mod === 3) {
-                        $("tooltiptext.p").text("Muscular. Can break objects like wood with bare hands and raw strength. Can perform heavy physical labor for several hours without break.");
+                        $("tooltiptext.p").html("Muscular. Can break objects like wood with bare hands and raw strength. Can perform heavy physical labor for several hours without break.");
                     } else if (Mod === 4) {
                         $("tooltiptext.p").text("Heavily muscular. Able to out-wrestle a work animal or catch a falling person. Performs the work of multiple people in physical labor.");
                     } else {
@@ -103,7 +103,7 @@
                                 <div class="value">${value}</div>
                                 <div class="inc_button" onclick="$(this).parent().parent().parent().incrementValue();">+</div>
                             </div>
-                            <div class="modifier tooltip tooltiptext" onclick="$(this).parent().parent().DiceRoll(); onmouseover="$(this).parent().parent().AttributeMessage()"">
+                            <div class="modifier tooltip tooltiptext" onclick="$(this).parent().parent().DiceRoll();">
                                 <span class="tooltiptext" onmouseover="$(this).parent().parent().AttributeMessage()"><p></p></span>    
                                 ${modifier}
                             </div>
