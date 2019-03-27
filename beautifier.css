@@ -187,6 +187,8 @@ a {
     color: #fff;
     background-color: #000;
     border-color: #0b325c;
+}
+
 .tooltip {
     position: relative;
     display: inline-block;
