@@ -33,7 +33,7 @@
                 previousValue = parseInt(previousValue);
 
                 // upper limit check
-                if (previousValue >= 30)
+                if (previousValue >= 20)
                     return;
 
                 let newValue = (previousValue + 1);
