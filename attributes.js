@@ -44,7 +44,7 @@
             //Jquery Function that calculates a random D20 roll and adds it with the modifier value. Throws an alert.
             $.fn.DiceRoll = function () {
                 let Dice = (Math.floor(Math.random() * 20 + 1));
-                let Mod = this.children().getModifier();//This points to the ul #character-attribute so we need the child of that which is the HTML that will get generated in el.html
+                let Mod = this.getModifier();//This points to the ul #character-attribute so we need the child of that which is the HTML that will get generated in el.html
                 swal.fire({
                     title: 'Rolling D20:',
                     text: (Mod < 0) ? `${Dice} + (${Mod}) = ${Dice + Mod}` : `${Dice} + ${Mod} = ${Dice + Mod}`,
